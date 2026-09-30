@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff;--ink:#12324a;--muted:#5f7484;--line:#e3ebf0;--accent:#1aa6b7}
+:root{--bg:#0c0c0d;--ink:#f2f2f0;--muted:#9a9a96;--line:#2a2a2a;--accent:#f2f2f0}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;line-height:1.5;min-height:100vh;display:flex;flex-direction:column}
+body{background:radial-gradient(circle at 15% 10%,#1a1a1c 0%,var(--bg) 45%,#000000 100%);color:var(--ink);font-family:"Outfit",system-ui,sans-serif;line-height:1.5;min-height:100vh;display:flex;flex-direction:column}
 main{flex:1;width:100%;max-width:640px;margin:0 auto;padding:12vh 24px 48px}
 h1{font-size:clamp(3.5rem,14vw,6.5rem);font-weight:700;letter-spacing:-.04em;line-height:1}
 .intro{margin-top:16px;color:var(--muted);font-weight:300;font-size:1.15rem;max-width:36ch}
@@ -32,33 +32,30 @@ footer a{color:var(--ink);font-weight:500;text-decoration:none;border-bottom:2px
 
 .bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 .bg span{position:absolute;left:var(--l);bottom:-12vh;width:var(--s);height:var(--s);animation:rise var(--t) linear var(--d) infinite}
-.bg .a{background:rgba(26,166,183,.14)}
-.bg .b{background:rgba(18,50,74,.06)}
-.bg .o{border:2px solid rgba(26,166,183,.28)}
+.bg .a{background:rgba(255,255,255,.06)}
+.bg .b{background:rgba(255,255,255,.035)}
+.bg .o{border:2px solid rgba(255,255,255,.16)}
 @keyframes rise{0%{transform:translate(0,0) rotate(0);opacity:0}10%{opacity:1}50%{transform:translate(28px,-65vh) rotate(90deg)}90%{opacity:1}100%{transform:translate(-20px,-125vh) rotate(180deg);opacity:0}}
 main,footer{position:relative;z-index:1}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto}.bg span{animation:none;bottom:var(--p)}}
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".35" stop-color="#fa7e1e"/><stop offset=".65" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs></svg>
-<div class="bg" aria-hidden="true"><span class="a" style="--l:6%;--s:28px;--t:22s;--d:0s;--p:70%"></span><span class="o" style="--l:14%;--s:54px;--t:30s;--d:-8s;--p:20%"></span><span class="b" style="--l:23%;--s:20px;--t:18s;--d:-3s;--p:45%"></span><span class="a" style="--l:31%;--s:40px;--t:26s;--d:-14s;--p:80%"></span><span class="o" style="--l:40%;--s:64px;--t:34s;--d:-20s;--p:10%"></span><span class="b" style="--l:48%;--s:24px;--t:20s;--d:-6s;--p:60%"></span><span class="a" style="--l:56%;--s:44px;--t:28s;--d:-11s;--p:35%"></span><span class="a" style="--l:64%;--s:18px;--t:17s;--d:-1s;--p:85%"></span><span class="o" style="--l:71%;--s:58px;--t:32s;--d:-17s;--p:50%"></span><span class="b" style="--l:79%;--s:30px;--t:24s;--d:-9s;--p:15%"></span><span class="a" style="--l:86%;--s:42px;--t:29s;--d:-22s;--p:72%"></span><span class="o" style="--l:93%;--s:22px;--t:19s;--d:-5s;--p:38%"></span><span class="b" style="--l:19%;--s:34px;--t:27s;--d:-24s;--p:92%"></span><span class="a" style="--l:76%;--s:26px;--t:21s;--d:-13s;--p:5%"></span></div>
+<div class="bg" aria-hidden="true"><span class="a" style="--l:4%;--s:72px;--t:36s;--d:-17s;--p:52%"></span><span class="o" style="--l:12%;--s:46px;--t:36s;--d:-2s;--p:6%"></span><span class="a" style="--l:20%;--s:22px;--t:26s;--d:-17s;--p:29%"></span><span class="o" style="--l:28%;--s:46px;--t:35s;--d:-26s;--p:65%"></span><span class="o" style="--l:36%;--s:22px;--t:22s;--d:-7s;--p:24%"></span><span class="a" style="--l:44%;--s:90px;--t:18s;--d:-21s;--p:25%"></span><span class="a" style="--l:52%;--s:16px;--t:27s;--d:-24s;--p:39%"></span><span class="b" style="--l:60%;--s:46px;--t:30s;--d:-22s;--p:55%"></span><span class="b" style="--l:68%;--s:90px;--t:22s;--d:-28s;--p:17%"></span><span class="a" style="--l:76%;--s:16px;--t:22s;--d:-15s;--p:38%"></span><span class="o" style="--l:84%;--s:46px;--t:27s;--d:-13s;--p:54%"></span><span class="b" style="--l:92%;--s:80px;--t:35s;--d:-18s;--p:79%"></span><span class="a" style="--l:9%;--s:18px;--t:28s;--d:-21s;--p:40%"></span><span class="o" style="--l:58%;--s:38px;--t:28s;--d:-17s;--p:77%"></span><span class="o" style="--l:80%;--s:16px;--t:24s;--d:-20s;--p:39%"></span><span class="b" style="--l:25%;--s:80px;--t:21s;--d:-2s;--p:86%"></span></div>
 <main>
   <section aria-labelledby="personal">
     <h2 id="personal">Personal</h2>
-    <p class="about">Follow me for the everyday stuff.</p>
     <ul>
-      <li><a class="link" href="https://www.facebook.com/AquaUnikk" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</span><span class="handle">RB Silacan</span></a></li>
-      <li><a class="link" href="https://www.instagram.com/rbsilacan" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="url(#ig)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="#d6249f" stroke="none"/></svg>Instagram</span><span class="handle">rbsilacan</span></a></li>
+      <li><a class="link" href="https://www.facebook.com/AquaUnikk" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</span><span class="handle">RB Silacan</span></a></li>
+      <li><a class="link" href="https://www.instagram.com/rbsilacan" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#ffffff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="#ffffff" stroke="none"/></svg>Instagram</span><span class="handle">rbsilacan</span></a></li>
     </ul>
   </section>
 
   <section aria-labelledby="hustle">
     <h2 id="hustle">taps iligan</h2>
-    <p class="about">My side hustle in Iligan.</p>
     <ul>
-      <li><a class="link" href="https://www.facebook.com/profile.php?id=61594355836737" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</span><span class="handle">taps iligan</span></a></li>
-      <li><a class="link" href="https://www.instagram.com/taps.iligan" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="url(#ig)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="#d6249f" stroke="none"/></svg>Instagram</span><span class="handle">taps.iligan</span></a></li>
+      <li><a class="link" href="https://www.facebook.com/profile.php?id=61594355836737" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</span><span class="handle">taps iligan</span></a></li>
+      <li><a class="link" href="https://www.instagram.com/taps.iligan" target="_blank" rel="noopener"><span class="platform"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#ffffff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1" fill="#ffffff" stroke="none"/></svg>Instagram</span><span class="handle">taps.iligan</span></a></li>
     </ul>
   </section>
 </main>
